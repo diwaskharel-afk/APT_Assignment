@@ -118,3 +118,23 @@ multipass shell diwas-vm
 ls /mnt/shared
 ```
 ![alt text](<Screenshot 2025-02-25 013902.png>)
+## Part 3: LXD Implementation
+### Installation
+
+```bash
+sudo apt update
+sudo apt install lxd
+```
+
+
+![alt text](image-2.png)
+
+
+### Basic LXD command
+
+1. Create a new container ans list it
+
+```bash
+lxc launch ubuntu:24.04 diwas-container
+lxc list
+```

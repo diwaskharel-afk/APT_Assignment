@@ -138,3 +138,49 @@ sudo apt install lxd
 lxc launch ubuntu:24.04 diwas-container
 lxc list
 ```
+![alt text](image-3.png)
+
+
+2. Start and stop the container
+
+```bash
+lxc start diwas-container
+lxc stop diwas-container
+```
+![alt text](image-4.png)
+
+3. Delete the container
+
+```bash
+lxc delete diwas-container
+```
+![alt text](image-5.png)
+
+
+## Part 4: Docker
+
+### Installation
+
+```bash
+sudo apt update
+sudo apt install docker.io
+```
+
+### Verify the installation
+
+```bash
+docker --version
+```
+![alt text](image-6.png)
+### Making directory and create nano file 
+
+```bash
+mkdir myapp
+cd myapp
+echo "hello world" > index.html
+```
+![alt text](image-7.png)
+### Build Docker
+
+```bash
+docker build -t diwas-gc .

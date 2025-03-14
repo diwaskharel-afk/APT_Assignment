@@ -184,3 +184,6 @@ echo "hello world" > index.html
 
 ```bash
 docker build -t diwas-gc .
+sudo docker run -d -p 8080:80 diwas-gc
+sudo docker ps
+```
